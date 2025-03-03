@@ -1,10 +1,29 @@
 import { useState } from 'react'
-import './App.css'
+import React from "react"
+import Header from "./Header"
+import "./index.css"
 
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  return (
+    <div className="App">
+      <Header />
+      <header className="App-header">
+        <p>
+          Building hdez.dev
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Loading...
+        </a>
+      </header>
+    </div>
+  )
 
 }
 
-export default App
+
