@@ -8,19 +8,6 @@ export default function App() {
   return (
     <div className="App">
       <Header />
-      <header className="App-header">
-        <p>
-          Building hdez.dev
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Loading...
-        </a>
-      </header>
     </div>
   )
 
