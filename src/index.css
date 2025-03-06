@@ -27,36 +27,49 @@ a:hover {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  place-items: center;
+  flex-direction: column;
+  /* With this change, the body (and #root) will span the full viewport */
+  align-items: stretch;
   min-width: 320px;
   min-height: 100vh;
-  max-width: 1280px;
   padding: 2rem;
 }
 
 .App-header {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  margin-left: auto;
-  margin-right: auto;
-  min-height: 100vh;
-  min-width: 100vw;
+  justify-content: space-between;
+  align-items: center;
   font-size: 1.5em;
+  padding: 1rem 1rem;
 }
 
-h1 {
-  font-size: 3.2em;
+h2 {
+  flex:1;
+  width: 100%;
+  font-size: 2.75em;
   line-height: 1.1;
-  justify-content: flex-start;
-  place-self: flex-start;
 }
 
-.nav-links {
+nav {
   display: flex;
+  flex:1;
+  width: 100%;
   justify-content: flex-end;
 }
+
+
+ul {
+  display:flex;
+}
+
+li {
+  margin-right: 2rem;
+  
+} 
 
 @media (prefers-color-scheme: light) {
   :root {

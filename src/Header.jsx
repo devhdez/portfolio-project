@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
     return (
         <header  className="App-header">
-            <h1>Hdez.dev</h1>
+            <h2>Hdez.dev</h2>
             <nav  className="nav-links">
                 <ul>
                     <li><a href="#about">About</a></li>
