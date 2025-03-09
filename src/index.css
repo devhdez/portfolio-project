@@ -61,14 +61,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.2em;
+  font-size: 1.45em;
 }
 
 ul {
   display: flex;
   flex-direction: row; /* Ensures links are in a row on mobile */
-  gap: 1rem;
-  padding-top: 2rem;
+  gap: 1em;
   list-style: none;
   padding-inline-start: 0px
 }
@@ -80,6 +79,26 @@ li {
 .change-lng-button {
   margin-top: 1rem;
 }
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 1.25em;
+  text-align: center;
+}
+
 
 /* Larger screens adjustments */
 @media (min-width: 768px) {
