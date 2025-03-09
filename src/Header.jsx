@@ -3,8 +3,8 @@ import React from 'react';
 const Header = () => {
     return (
         <header  className="App-header">
-            <h2>Hdez.dev</h2>
-            <nav  className="nav-links">
+            <nav  className="nav">
+            <h3>Hdez.dev</h3>
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
