@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Typeface, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #504f4f;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #eae9e9;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -23,11 +23,12 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #da9808;
 }
 
 body {
   margin: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -36,46 +37,70 @@ body {
   padding: 1rem;
 }
 
+/* Mobile-first header */
 .App-header {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1rem 1rem;
+  padding: 1rem;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  margin-bottom: 1rem; /* Adjusted */
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav {
   display: flex;
-  flex:1;
-  width: 100%;
-  justify-content: center;
-  font-size: 1.5em;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
 }
-
-h3 {
-  line-height: 1.1;
-  justify-content: left;
-}
-
 
 ul {
-  display:flex;
+  display: flex;
+  flex-direction: row; /* Ensures links are in a row on mobile */
+  gap: 1rem;
+  padding-top: 2rem;
+  list-style: none;
+  padding-inline-start: 0px
 }
 
 li {
-  margin-right: 2rem;
-  
-} 
+  text-align: center;
+}
 
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 800px;
+.change-lng-button {
+  margin-top: 1rem;
+}
+
+/* Larger screens adjustments */
+@media (min-width: 768px) {
+  .App-header {
+    flex-direction: row;
+    justify-content: center; /* Adjusted */
+  }
+
+  .logo {
+    margin: 0 1rem 0 0; /* Adjusted */
+  }
+
+  .nav {
+    font-size: 1.5em;
+    flex-direction: row; /* Adjusted */
+    gap: 2rem; /* Adjusted */
+  }
+
+  .change-lng-button {
+    margin-left: auto; /* Adjusted */
+  }
 }
 
 @media (prefers-color-scheme: light) {

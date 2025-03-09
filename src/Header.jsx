@@ -1,16 +1,21 @@
 import React from 'react';
+import './index.css'; // Ensure this import is present
 
 const Header = () => {
     return (
-        <header  className="App-header">
-            <nav  className="nav">
-            <h3>Hdez.dev</h3>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+        <header className="App-header">
+            <img src="/assets/HDEZ-cropped.svg" alt="Logo" className="logo" />
+            <div className="nav-container">
+                <nav className="nav">
+                    <ul>
+                        <li><a href="#about">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button className="change-lng-button">Change Language Button</button>
         </header>
     );
 };
