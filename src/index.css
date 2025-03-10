@@ -14,7 +14,7 @@
 }
 
 :root {
-  font-family: Typeface, sans-serif;
+  font-family: 'roboto', sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -30,7 +30,7 @@
 
 a {
   font-weight: 500;
-  color: RGB(128, 169, 157);
+  color: #4dc39e;
   text-decoration: inherit;
 }
 a:hover {
@@ -111,13 +111,6 @@ li {
 /* Heroe section */
 
 .heroe{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.heroe-content{
   display: flex;
   flex-direction: column;
   align-items: center;
