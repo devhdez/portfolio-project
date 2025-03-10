@@ -86,35 +86,62 @@ li {
 }
 
 .change-lng-button {
-  margin: 1rem;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'); /* Spanish flag */
+  background-size: cover; /* Cover the entire button */
+  background-position: center;
+  border: none;
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display inline-block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  transition-duration: 0.4s; /* Transition effect */
+  cursor: pointer; /* Pointer cursor on hover */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow behind */
+  border-radius: 5px; /* Rounded corners */
 }
 
-/* Hero section */
+.change-lng-button:hover {
+  opacity: 0.8; /* Slight transparency on hover */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
 
-.heroe {
+/* Heroe section */
+
+.heroe{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.flat-image {
-  margin-top: -80px;
-  margin-bottom: -50px;
-  max-width: 376px;
-  max-height: 376px;
-  max-width: 100%;
-  height: auto;
+.heroe-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .heroe h1 {
-  font-size: 2.5em;
+  margin-bottom: -10px;
+  font-size: 2em;
   text-align: center;
 }
 
 p {
   font-size: 1.25em;
-  font-weight: 600;
+  font-weight: 200;
+}
+
+.flat-image {
+  margin-top: -60px;
+  margin-bottom: -50px;
+  max-width: 376px;
+  max-height: 376px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Common button styles */
@@ -125,9 +152,9 @@ p {
 }
 
 .heroe-button {
-  background-color: #4dc37a; /* Green background */
+  background-color: #4dc39e; /* Green background */
   border: none;
-  color: white; /* White text */
+  color: rgb(0, 0, 0); /* White text */
   padding: 15px 32px; /* Padding */
   text-align: center;
   text-decoration: none;
@@ -142,14 +169,14 @@ p {
 
 
 .heroe-button:hover {
-  background-color: #205234; /* White background on hover */
+  background-color: #42a69a; /* White background on hover */
   color: white; /* Green text on hover */
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
 /* Specific styles for the contact button */
 .heroe-button-contact {
-  background-color: #dba206de; /* Orange background */
+  background-color: #e3ad19de; /* Orange background */
 }
 
 .heroe-button-contact:hover {

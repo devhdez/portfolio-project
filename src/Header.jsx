@@ -15,7 +15,7 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <button className="change-lng-button">Change Language Button</button>
+            <button className="change-lng-button">Change Language!</button>
         </header>
     );
 };
