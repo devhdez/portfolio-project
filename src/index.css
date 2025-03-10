@@ -176,6 +176,17 @@ p {
   color: #ffffff; /* Orange text on hover */
 }
 
+/* Features Section */
+
+.features-wrapper , h2, p{
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 /* Larger screens adjustments */
 @media (min-width: 768px) {
   .App-header {
