@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.blinking-cursor {
+  display: inline;
+  animation: blink 1s infinite;
+}
+
 :root {
   font-family: Typeface, sans-serif;
   line-height: 1.5;
@@ -9,7 +20,7 @@
 
   color-scheme: light dark;
   color: rgba(0, 0, 0, 0.87);
-  background-color: #eae9e9;
+  background-color: #fffffffa;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +30,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: RGB(128, 169, 157);
   text-decoration: inherit;
 }
 a:hover {
@@ -28,7 +39,6 @@ a:hover {
 
 body {
   margin: 0;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -48,7 +58,6 @@ body {
 .logo {
   max-width: 150px;
   max-height: 150px;
-  margin-bottom: 1rem; /* Adjusted */
 }
 
 .nav-container {
@@ -77,28 +86,76 @@ li {
 }
 
 .change-lng-button {
-  margin-top: 1rem;
+  margin: 1rem;
 }
 
-.hero {
+/* Hero section */
+
+.heroe {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
 }
 
-.hero h1 {
+.flat-image {
+  margin-top: -80px;
+  margin-bottom: -50px;
+  max-width: 376px;
+  max-height: 376px;
+  max-width: 100%;
+  height: auto;
+}
+
+.heroe h1 {
   font-size: 2.5em;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
-.hero p {
+p {
   font-size: 1.25em;
-  text-align: center;
+  font-weight: 600;
 }
 
+/* Common button styles */
+
+.heroe-buttons {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.heroe-button {
+  background-color: #4dc37a; /* Green background */
+  border: none;
+  color: white; /* White text */
+  padding: 15px 32px; /* Padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px; /* Margin */
+  transition-duration: 0.4s; /* Transition effect */
+  cursor: pointer;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.2); /* Shadow behind */
+  border-radius: 5px; /* Rounded corners */
+}
+
+
+.heroe-button:hover {
+  background-color: #205234; /* White background on hover */
+  color: white; /* Green text on hover */
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Specific styles for the contact button */
+.heroe-button-contact {
+  background-color: #dba206de; /* Orange background */
+}
+
+.heroe-button-contact:hover {
+  background-color: #553f02de; /* White background on hover */
+  color: #ffffff; /* Orange text on hover */
+}
 
 /* Larger screens adjustments */
 @media (min-width: 768px) {
