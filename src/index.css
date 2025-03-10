@@ -141,6 +141,7 @@ p {
 .heroe-buttons {
   display: inline-block;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .heroe-button {
@@ -185,6 +186,16 @@ p {
   align-items: center;
   justify-content: center;
   text-align: center;
+}
+
+.features-wrapper p {
+  line-height: 1.5;
+
+}
+
+.lafoto {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Larger screens adjustments */
