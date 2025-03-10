@@ -7,6 +7,13 @@ const Heroe = () => {
         cursor.className = 'blinking-cursor';
         cursor.innerText = '|';
         header.appendChild(cursor);
+
+        return () => {
+            // Cleanup function: remove the cursor to avoid duplication on Strict Mode
+            if (header.contains(cursor)) {
+                header.removeChild(cursor);
+            }
+        };
       }, []);
     return (
         <section className="heroe">
