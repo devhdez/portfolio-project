@@ -97,6 +97,7 @@ li {
   text-decoration: none; /* Remove underline */
   display: inline-block; /* Display inline-block */
   font-size: 16px; /* Font size */
+  font-weight: 600; /* Font weight */
   margin: 4px 2px; /* Margin */
   transition-duration: 0.4s; /* Transition effect */
   cursor: pointer; /* Pointer cursor on hover */

@@ -31,6 +31,9 @@ function useStringSwitcher(initialString, targetString, interval) {
   }, [index, toggle, initialString, targetString]);
 
   return currentString;
+  
 }
+
+
 
 export default useStringSwitcher;
