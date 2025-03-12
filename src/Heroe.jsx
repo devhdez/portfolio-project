@@ -7,7 +7,7 @@ const Heroe = () => {
         cursor.className = 'blinking-cursor';
         cursor.innerText = '|';
         header.appendChild(cursor);
-
+    
         return () => {
             // Cleanup function: remove the cursor to avoid duplication on Strict Mode
             if (header.contains(cursor)) {
@@ -15,6 +15,14 @@ const Heroe = () => {
             }
         };
       }, []);
+
+    UseEffect(() => {
+        const h1 = document.querySelector('.heroe-title');
+        const text = h1.innerText;
+        
+
+    }, []);
+
     return (
         <section className="heroe">
                 <h1 className="heroe-title">Expand your business</h1>
