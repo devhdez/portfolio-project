@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes blink {
-  0% { opacity: 1; }
-  50% { opacity: 0; }
-  100% { opacity: 1; }
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 24px;
+  color: black; /* Customize the color as needed */
+  animation: blink 1s step-start infinite;
 }
 
-.blinking-cursor {
-  display: inline;
-  animation: blink 1s infinite;
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
 
 :root {
