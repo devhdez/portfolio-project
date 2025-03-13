@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 
+//Need to make it asynchronus, error not rendering first letter
+
 function useStringSwitcher(initialString, targetString, interval) {
   const [currentString, setCurrentString] = useState('');
   const [toggle, setToggle] = useState(false);
