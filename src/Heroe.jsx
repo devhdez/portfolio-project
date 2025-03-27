@@ -3,7 +3,7 @@ import useStringSwitcher from './Stringswitcher';
 
 
 const Heroe = () => {
-    const myString = useStringSwitcher('Expand your business', "Expande tu negocio", 5000);
+    const myString = useStringSwitcher('Expand your business', "Expande tu negocio", 6000);
 
     return (
         <section className="heroe">
@@ -12,7 +12,7 @@ const Heroe = () => {
                     {myString}
                 <span className="blinking-cursor">|</span>
                 </h1>
-                <p>Let me convert your website into a multilingual one so you don't miss a single customer! <br/>
+                <p>Let me transform your business into a multilingual empire so you don't miss a single customer! <br/>
                 <br></br>
                 I can instantly make your business grow by exposing you to more clients and niche markets, all while keeping your website looking professional and easy to navigate.</p>
                 <img src="/assets/relaxed-guy.png" alt="flat-image" className='flat-image'/> 

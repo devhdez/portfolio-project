@@ -27,7 +27,7 @@ function useStringSwitcher(initialString, targetString, interval) {
       if (index >= text.length - 1) {
         clearInterval(typeEffect);
       }
-    }, 100); // Typing interval
+    }, 150); // Typing interval
 
     return () => clearInterval(typeEffect);
   }, [index, toggle, initialString, targetString]);
