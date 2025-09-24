@@ -9,33 +9,35 @@ const Services = () => {
         <div className="service-item">
           <div className="service-icon">🌍</div>
           <div>
-            <h3>Bilingual Websites</h3>
+            <h3>Multilingual Websites</h3>
             <p>
-              Responsive business websites in English & Spanish. Includes
-              translation + localization so your brand resonates across
-              audiences.
+              Responsive websites in English & Spanish, fully localized so they
+              feel natural to every audience. Expand your business without losing
+              your voice.
             </p>
           </div>
         </div>
 
         <div className="service-item">
-          <div className="service-icon">📑</div>
+          <div className="service-icon">✍️</div>
           <div>
-            <h3>Financial Translation Bundle</h3>
+            <h3>Clear & Polished Copy</h3>
             <p>
-              Specialized EN ↔ ES translations for reports, policies, and pension
-              documents. Accurate, clear, and industry-ready.
+              Already have content in one language? I help refine and adapt your
+              text so it sounds professional, engaging, and tailored to your
+              clients — no awkward phrasing, just clean communication.
             </p>
           </div>
         </div>
 
         <div className="service-item">
-          <div className="service-icon">🔎</div>
+          <div className="service-icon">💻</div>
           <div>
-            <h3>SEO Optimization Add-On</h3>
+            <h3>Frontend Development</h3>
             <p>
-              Boost your site’s visibility with keyword optimization, clean
-              structure, and multilingual SEO strategies.
+              Modern, responsive web design that’s fast, user-friendly, and
+              easy to manage. Whether a business site, portfolio, or webshop —
+              I make it functional and elegant.
             </p>
           </div>
         </div>
