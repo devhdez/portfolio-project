@@ -3,7 +3,7 @@ import React from "react"
 import Header from "./Header"
 import Heroe from "./Heroe"
 import Feat from "./Feat"
-import Projects from "./Projects"
+import Services from "./Services"
 import "./index.css"
 import { Features } from 'tailwindcss'
 
@@ -14,7 +14,7 @@ export default function App() {
       <Header />
       <Heroe />
       <Feat />
-      <Projects />
+      <Services />
     </div>
   )
 

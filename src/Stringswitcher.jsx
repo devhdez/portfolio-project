@@ -1,41 +1,51 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 
-//Need to make it asynchronus, error not rendering first letter
-
-function useStringSwitcher(initialString, targetString, interval) {
-  const [currentString, setCurrentString] = useState('');
-  const [toggle, setToggle] = useState(false);
+function useStringSwitcher(
+  initialString,
+  targetString,
+  switchInterval = 4000,
+  typingSpeed = 150
+) {
+  const [currentString, setCurrentString] = useState("");
+  const [activeText, setActiveText] = useState(initialString);
   const [index, setIndex] = useState(0);
+  const [showCursor, setShowCursor] = useState(true);
 
+  // Switch between initialString and targetString every X ms
   useEffect(() => {
     const switcher = setInterval(() => {
-      setToggle((prevToggle) => !prevToggle);
-      setIndex(0); // Reset index when toggling
-      setCurrentString(''); // Clear the previous text when toggling
-    }, interval);
+      setActiveText((prev) =>
+        prev === initialString ? targetString : initialString
+      );
+      setIndex(0); // reset typing index
+      setCurrentString(""); // clear current text
+    }, switchInterval);
 
     return () => clearInterval(switcher);
-  }, [interval]);
+  }, [initialString, targetString, switchInterval]);
 
+  // Typing effect
   useEffect(() => {
-    const text = toggle ? targetString : initialString;
+    if (index < activeText.length) {
+      const typing = setTimeout(() => {
+        setCurrentString((prev) => prev + activeText.charAt(index));
+        setIndex((prev) => prev + 1);
+      }, typingSpeed);
 
-    const typeEffect = setInterval(() => {
-      setCurrentString((prevString) => prevString + text.charAt(index));
-      setIndex((prevIndex) => prevIndex + 1);
+      return () => clearTimeout(typing);
+    }
+  }, [index, activeText, typingSpeed]);
 
-      if (index >= text.length - 1) {
-        clearInterval(typeEffect);
-      }
-    }, 150); // Typing interval
+  // Cursor blinking
+  useEffect(() => {
+    const cursorBlink = setInterval(() => {
+      setShowCursor((prev) => !prev);
+    }, 500); // blink speed
 
-    return () => clearInterval(typeEffect);
-  }, [index, toggle, initialString, targetString]);
+    return () => clearInterval(cursorBlink);
+  }, []);
 
   return currentString;
-  
 }
-
-
 
 export default useStringSwitcher;
