@@ -22,7 +22,7 @@ const hero = () => {
       </p>
 
       <img
-        src="/assets/relaxed-guy.png"
+        src="portfolio-project/assets/relaxed-guy.png"
         alt="flat-image"
         className="flat-image"
       />
