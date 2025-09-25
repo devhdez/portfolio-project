@@ -22,7 +22,7 @@ const hero = () => {
       </p>
 
       <img
-        src="/portfolio-project/assets/relaxed-guy.png"
+        src={`${import.meta.env.BASE_URL}relaxed-guy.png`}
         alt="flat-image"
         className="flat-image"
       />
