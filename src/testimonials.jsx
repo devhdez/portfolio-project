@@ -19,9 +19,9 @@ const Testimonials = () => {
         <div className="testimonial-card">
           <p className="testimonial-text">
             “He contado con el expertise de Borja en asuntos de traducción para varios proyectos de marketing que he realizado.
-            Es muy necesario contar con una traducción experta para que los copys y mensajes de las campañas de comunicación tengan sentido del español al ingles o al alemán
+            Es necesario contar con una traducción experta para que los copys y mensajes de las campañas de comunicación tengan sentido en cualquier idioma."
           </p>
-          <h4 className="testimonial-author">— Ian Moreno Aguado</h4>
+          <h4 className="testimonial-author">— Ian Moreno Aguado<br></br>Experto en SEO y Marketing Digital</h4>
         </div>
 
         <div className="testimonial-card">
@@ -30,7 +30,7 @@ const Testimonials = () => {
             expectations. Everything works smoothly, and the copy sounds
             professional in both languages.”
           </p>
-          <h4 className="testimonial-author">— Daniel Kilders Díaz</h4>
+          <h4 className="testimonial-author">— Daniel Kilders<br></br>Creador de Kilders GMBH</h4>
         </div>
 
       </div>
