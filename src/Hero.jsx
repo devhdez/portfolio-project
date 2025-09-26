@@ -28,12 +28,16 @@ const hero = () => {
       />
 
           <div className='hero-buttons'>
-              <button className='hero-button hero-button-primary'>
-                  Contact
-              </button>
-              <button className='hero-button hero-button-contact'>
+              <button className='hero-button hero-button-know'
+              onClick={() => {document.getElementById('about').scrollIntoView({ behavior: 'smooth' });}}>
                   Know more
               </button>
+              <button className='hero-button hero-button-primary'
+              
+              >
+                  Contact
+              </button>
+              
           </div>
     </section>
   );

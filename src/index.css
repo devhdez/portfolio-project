@@ -145,8 +145,6 @@ p {
 }
 
 /* Common button styles */
-
-/* Common button styles */
 .hero-buttons {
   display: inline-block;
   margin-top: 1rem;
@@ -185,11 +183,11 @@ p {
 }
 
 /* Secondary CTA (yellow/orange contact) */
-.hero-button-contact {
+.hero-button-know {
   background-color: #e3ad19de;
 }
 
-.hero-button-contact:hover {
+.hero-button-know:hover {
   background-color: #553f02de;
   color: #ffffff;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
@@ -197,11 +195,11 @@ p {
 
 
 /* Specific styles for the contact button */
-.hero-button-contact {
+.hero-button-know {
   background-color: #e3ad19de; /* Orange background */
 }
 
-.hero-button-contact:hover {
+.hero-button-know:hover {
   background-color: #553f02de; /* White background on hover */
   color: #ffffff; /* Orange text on hover */
 }
