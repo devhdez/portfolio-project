@@ -6,7 +6,7 @@ const About = () => {
       <h2>About Me 👨‍💻</h2>
       <div className="about-container">
         <img
-          src="/assets/me.jpg"
+          src="/portfolio-project/assets/me.jpg"
           alt="Profile"
           className="about-image"
         />

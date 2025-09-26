@@ -4,7 +4,7 @@ import './index.css';
 const Header = () => {
     return (
         <header className="App-header">
-            <img src="/assets/HDEZ-cropped.svg" alt="Logo" className="logo" />
+            <img src="/portfolio-project/assets/HDEZ-cropped.svg" alt="Logo" className="logo" />
             <div className="nav-container">
                 <nav className="nav">
                     <ul>
