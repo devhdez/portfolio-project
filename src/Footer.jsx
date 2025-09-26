@@ -18,6 +18,11 @@ const Footer = () => {
           <a href="#contact">Contact</a>
         </nav>
 
+          <div className="footer-contact">
+          <a href="mailto:hdezdev@hotmail.com">hdezdev@hotmail.com</a>
+          {/* <a href="tel:+1234567890">+1 234 567 890</a> */}
+          </div>
+
         <div className="footer-socials">
           <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">🔗</a>
           <a href="https://github.com" target="_blank" rel="noopener noreferrer">💻</a>
