@@ -23,7 +23,10 @@ const Contact = () => {
       <h2>Get in Touch</h2>
       <p>Have a project in mind? Let’s make it happen.</p>
       {!submitted ? (
-        <form className="contact-form" onSubmit={handleSubmit}>
+        <form 
+        action="https://formspree.io/f/mdkwadbg"
+        method="POST"
+        className="contact-form" onSubmit={handleSubmit}>
           <input
             type="text"
             name="name"
