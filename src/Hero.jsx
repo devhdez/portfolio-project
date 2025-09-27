@@ -33,8 +33,8 @@ const hero = () => {
                   Know more
               </button>
               <button className='hero-button hero-button-primary'
+              onClick={() => {document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });}}>
               
-              >
                   Contact
               </button>
               
