@@ -5,7 +5,8 @@ import Hero from "./Hero"
 import Feat from "./Feat"
 import Services from "./Services"
 import About from './about'
-import Testimonials from './testimonials'
+import Testimonials from './Testimonials'
+import Contact from './Contact'
 import Footer from './Footer'
 import "./index.css"
 import { Features } from 'tailwindcss'
@@ -20,6 +21,7 @@ export default function App() {
       <Services />
       <About />
       <Testimonials />
+      <Contact />
       <Footer />
     </div>
   )
