@@ -42,10 +42,10 @@ const Header = () => {
         style={{
           backgroundImage: `url(${flagUrl})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'contain',
           color: 'white',
-          minWidth: '180px',
-          height: '48px',
+          minWidth: '150px',
+          height: '40px',
           fontWeight: 'bold',
           border: 'none',
           borderRadius: '6px',
