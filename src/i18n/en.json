@@ -1,9 +1,4 @@
 {
-<<<<<<< Updated upstream
-    "welcome": "Welcome to my website!",
-    "changeLanguage": "Change Language"
-}
-=======
   "header": {
     "nav": {
       "home": "Home",
@@ -114,4 +109,3 @@
     "rights": "© {{year}} Hdez.dev — All rights reserved."
   }
 }
->>>>>>> Stashed changes

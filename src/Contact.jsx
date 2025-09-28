@@ -1,12 +1,15 @@
 // Contact.jsx
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './index.css';
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="contact" id="contact">
-      <h2>Get in Touch</h2>
-      <p>Have a project in mind? Let’s make it happen.</p>
+      <h2>{t('contact.title')}</h2>
+      <p>{t('contact.description')}</p>
       
       <form 
         action="https://formspree.io/f/mdkwadbg"
@@ -16,22 +19,22 @@ const Contact = () => {
         <input
           type="text"
           name="name"
-          placeholder="Your Name"
+          placeholder={t('contact.namePlaceholder')}
           required
         />
         <input
           type="email"
           name="email"
-          placeholder="Your Email"
+          placeholder={t('contact.emailPlaceholder')}
           required
         />
         <textarea
           name="message"
           rows="5"
-          placeholder="Your Message"
+          placeholder={t('contact.messagePlaceholder')}
           required
         ></textarea>
-        <button type="submit" className="contact-submit">Send Message</button>
+        <button type="submit" className="contact-submit">{t('contact.submit')}</button>
       </form>
     </section>
   );

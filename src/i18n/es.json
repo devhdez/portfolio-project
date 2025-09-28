@@ -1,10 +1,4 @@
 {
-<<<<<<< Updated upstream
-    "welcome": "¡Bienvenido a mi sitio web!",
-    "changeLanguage": "Cambiar idioma"
-
-}
-=======
   "header": {
     "nav": {
       "home": "Inicio",
@@ -115,4 +109,3 @@
     "rights": "© {{year}} Hdez.dev — Todos los derechos reservados."
   }
 }
->>>>>>> Stashed changes
