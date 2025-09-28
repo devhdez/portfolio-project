@@ -41,11 +41,11 @@ const Header = () => {
         onClick={toggleLanguage}
         style={{
           backgroundImage: `url(${flagUrl})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'contain',
+          backgroundSize: '100% auto',
+          backgroundPosition: 'center',
           color: 'white',
           minWidth: '150px',
-          height: '40px',
+          height: '35px',
           fontWeight: 'bold',
           border: 'none',
           borderRadius: '6px',
