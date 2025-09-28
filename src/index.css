@@ -92,23 +92,21 @@ li {
 }
 
 .change-lng-button {
-  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'); /* Spanish flag */
-  background-size: cover; /* Cover the entire button */
+  background-size: 400% auto;
   background-position: center;
+  color: white;
+  min-width: 180px;
+  height: 48px;
+  font-weight: bold;
   border: none;
-  color: white; /* White text */
-  padding: 15px 32px; /* Padding */
-  text-align: center; /* Center text */
-  text-decoration: none; /* Remove underline */
-  display: inline-block; /* Display inline-block */
-  font-size: 16px; /* Font size */
-  font-weight: 600; /* Font weight */
-  margin: 4px 2px; /* Margin */
-  transition-duration: 0.4s; /* Transition effect */
-  cursor: pointer; /* Pointer cursor on hover */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Shadow behind */
-  border-radius: 5px; /* Rounded corners */
+  border-radius: 6px;
+  padding: 0 1rem;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+  transition: background 0.3s ease;
+  white-space: nowrap;
 }
+
 
 .change-lng-button:hover {
   opacity: 0.8; /* Slight transparency on hover */
