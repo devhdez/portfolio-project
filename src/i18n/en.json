@@ -1,4 +1,111 @@
 {
-    "welcome": "Welcome to my website!",
-    "changeLanguage": "Change Language"
+  "header": {
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "changeLanguage": "Change Language!"
+  },
+  "hero": {
+    "title": "Expand your business",
+    "description": [
+      "Whether you need to expand into new markets or simply sharpen your message, I help businesses communicate with clarity and impact.",
+      "From multilingual websites to polished copy, I create digital experiences that look professional, read naturally, and connect with the right audience."
+    ],
+    "cta": {
+      "about": "Know more",
+      "contact": "Contact"
+    }
+  },
+  "features": {
+    "title": "What I Do",
+    "items": [
+      {
+        "title": "🌍 Multilingual Communication",
+        "description": "Helping businesses sound natural in English and Spanish so every client feels at home."
+      },
+      {
+        "title": "✍️ Clear Writing",
+        "description": "Polishing text so your message is sharp, professional, and easy to understand."
+      },
+      {
+        "title": "💻 Frontend Development",
+        "description": "Building modern, responsive websites that look great and work everywhere."
+      }
+    ]
+  },
+  "services": {
+    "title": "Services",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Multilingual Websites",
+        "description": "Responsive websites in English & Spanish, fully localized so they feel natural to every audience. Expand your business without losing your voice."
+      },
+      {
+        "icon": "✍️",
+        "title": "Clear & Polished Copy",
+        "description": "Already have content in one language? I help refine and adapt your text so it sounds professional, engaging, and tailored to your clients — no awkward phrasing, just clean communication."
+      },
+      {
+        "icon": "💻",
+        "title": "Frontend Development",
+        "description": "Modern, responsive web design that’s fast, user-friendly, and easy to manage. Whether a business site, portfolio, or webshop — I make it functional and elegant."
+      },
+      {
+        "icon": "🛠️",
+        "title": "Coming Soon",
+        "description": "Demo projects & case studies will be added here as I develop and launch new work."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Me 👨‍💻",
+    "paragraphs": [
+      "I’m Borja,<strong>Frontend Developer & Communication Specialist.</strong> I am from Spain but I've been living in the UK for more than 6 years. My mission is to help people break the language barrier and businesses expand into new markets by building websites that are <strong>modern, multilingual, and accessible.</strong>",
+      "With a degree in Translation & Interpreting and over two years of self-taught software engineering, I combine technical skill with cultural understanding to deliver digital solutions that truly connect."
+    ],
+    "cta": "Send me an email now!"
+  },
+  "testimonials": {
+    "title": "What Clients Say 🤷‍♂️",
+    "items": [
+      {
+        "quote": "“The quality of the translations has always been outstanding, adapting seamlessly to both American and British English and to the conventions of each journal, many of them JCR indexed and very demanding with language quality.”",
+        "author": "— Daniel Rodríguez Rodríguez",
+        "role": "Professor at Universidad Europea de Canarias"
+      },
+      {
+        "quote": "“I’ve relied on Borja’s expertise for several marketing projects. Expert translation is essential so that copy and campaign messages make sense in any language.”",
+        "author": "— Ian Moreno Aguado",
+        "role": "SEO & Digital Marketing Specialist"
+      },
+      {
+        "quote": "“He created a polished bilingual website that exceeded our expectations. Everything works smoothly, and the copy sounds professional in both languages.”",
+        "author": "— Daniel Kilders",
+        "role": "Founder of Kilders GMBH"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "description": "Have a project in mind? Let’s make it happen.",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "submit": "Send Message"
+  },
+  "footer": {
+    "tagline": "Frontend Developer & Communication Specialist",
+    "nav": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "testimonials": "Testimonials",
+      "contact": "Contact"
+    },
+    "rights": "© {{year}} Hdez.dev — All rights reserved."
+  }
 }

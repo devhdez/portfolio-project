@@ -3,20 +3,21 @@ import { useTranslation } from 'react-i18next';
 import './index.css';
 
 const Header = () => {
-  const { i18n } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const currentLanguage = i18n.resolvedLanguage || i18n.language || 'en';
 
   const toggleLanguage = () => {
-    const newLang = i18n.language === 'en' ? 'es' : 'en';
+    const newLang = currentLanguage.startsWith('en') ? 'es' : 'en';
     i18n.changeLanguage(newLang);
   };
 
-  const isEnglish = i18n.language === 'en';
+  const isEnglish = currentLanguage.startsWith('en');
 
-  const buttonText = isEnglish ? 'Change Language!' : 'Cambiar Idioma!';
-  const flagUrl = isEnglish 
+  const flagUrl = isEnglish
     ? '/portfolio-project/assets/spain-flag.png'
     : '/portfolio-project/assets/uk-flag.png';
-
+  
   return (
     <header className="App-header">
       <img
@@ -27,10 +28,10 @@ const Header = () => {
       <div className="nav-container">
         <nav className="nav">
           <ul>
-            <li><a href="#">Home</a></li>
-            {/* <li><a href="#projects">Services</a></li> */}
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#hero">{t('header.nav.home')}</a></li>
+            <li><a href="#services">{t('header.nav.services')}</a></li>
+            <li><a href="#about">{t('header.nav.about')}</a></li>
+            <li><a href="#contact">{t('header.nav.contact')}</a></li>
           </ul>
         </nav>
       </div>
@@ -55,7 +56,7 @@ const Header = () => {
           whiteSpace: 'nowrap'
         }}
       >
-        {buttonText}
+        {t('header.changeLanguage')}
       </button>
     </header>
   );

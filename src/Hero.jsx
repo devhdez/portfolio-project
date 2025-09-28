@@ -1,24 +1,28 @@
 import React from 'react';
-import useStringSwitcher from './Stringswitcher';
+import { useTranslation } from 'react-i18next';
 
 const hero = () => {
-  const myString = useStringSwitcher(
-    'Expand your business',
-    'Expande tu negocio',
-    6000,  // switch interval
-    150    // typing speed
-  );
+  const { t } = useTranslation();
+  const descriptionLines = t('hero.description', { returnObjects: true });
 
   return (
-    <section className="hero">
-     <h1 className="hero-title typing">
-        {myString}
-    </h1>
+    <section className="hero" id="hero">
+      <h1 className="hero-title typing">
+        {t('hero.title')}
+      </h1>
 
       <p>
-        Whether you need to expand into new markets or simply sharpen your message, I help businesses communicate with clarity and impact.<br />
-        <br />
-        From multilingual websites to polished copy, I create digital experiences that look professional, read naturally, and connect with the right audience.
+        {descriptionLines.map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            {index < descriptionLines.length - 1 && (
+              <>
+                <br />
+                <br />
+              </>
+            )}
+          </React.Fragment>
+        ))}
       </p>
 
       <img
@@ -28,16 +32,15 @@ const hero = () => {
       />
 
           <div className='hero-buttons'>
-              <button className='hero-button hero-button-know'
-              onClick={() => {document.getElementById('about').scrollIntoView({ behavior: 'smooth' });}}>
-                  Know more
-              </button>
-              <button className='hero-button hero-button-primary'
-              onClick={() => {document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });}}>
-              
-                  Contact
-              </button>
-              
+          <button className='hero-button hero-button-know'
+            onClick={() => {document.getElementById('about').scrollIntoView({ behavior: 'smooth' });}}>
+            {t('hero.cta.about')}
+          </button>
+          <button className='hero-button hero-button-primary'
+            onClick={() => {document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });}}>
+            {t('hero.cta.contact')}
+          </button>
+
           </div>
     </section>
   );

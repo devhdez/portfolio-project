@@ -1,5 +1,111 @@
 {
-    "welcome": "¡Bienvenido a mi sitio web!",
-    "changeLanguage": "Cambiar idioma"
-
+  "header": {
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Sobre mí",
+      "contact": "Contacto"
+    },
+    "changeLanguage": "¡Cambiar idioma!"
+  },
+  "hero": {
+    "title": "Expande tu negocio",
+    "description": [
+      "Ya sea que necesites expandirte a nuevos mercados o simplemente afinar tu mensaje, ayudo a las empresas a comunicarse con claridad e impacto.",
+      "Desde sitios web multilingües hasta textos pulidos, creo experiencias digitales que se ven profesionales, suenan naturales y conectan con el público adecuado."
+    ],
+    "cta": {
+      "about": "Saber más",
+      "contact": "Contacto"
+    }
+  },
+  "features": {
+    "title": "Lo que hago",
+    "items": [
+      {
+        "title": "🌍 Comunicación multilingüe",
+        "description": "Ayudo a las empresas a sonar naturales en inglés y español para que cada cliente se sienta como en casa."
+      },
+      {
+        "title": "✍️ Escritura clara",
+        "description": "Pulo tus textos para que tu mensaje sea directo, profesional y fácil de entender."
+      },
+      {
+        "title": "💻 Desarrollo frontend",
+        "description": "Construyo sitios web modernos y responsive que se ven increíbles y funcionan en cualquier dispositivo."
+      }
+    ]
+  },
+  "services": {
+    "title": "Servicios",
+    "items": [
+      {
+        "icon": "🌍",
+        "title": "Sitios web multilingües",
+        "description": "Sitios responsive en inglés y español, completamente localizados para que se sientan naturales para cada audiencia. Expande tu negocio sin perder tu voz."
+      },
+      {
+        "icon": "✍️",
+        "title": "Copy claro y pulido",
+        "description": "¿Ya tienes contenido en un idioma? Te ayudo a refinarlo y adaptarlo para que suene profesional, atractivo y alineado con tus clientes, sin frases forzadas: comunicación limpia."
+      },
+      {
+        "icon": "💻",
+        "title": "Desarrollo frontend",
+        "description": "Diseño web moderno y responsive: rápido, intuitivo y fácil de gestionar. Ya sea un sitio corporativo, un portfolio o una tienda online, lo hago funcional y elegante."
+      },
+      {
+        "icon": "🛠️",
+        "title": "Próximamente",
+        "description": "Añadiré proyectos demo y casos de estudio a medida que siga desarrollando y lanzando nuevo trabajo."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mí 👨‍💻",
+    "paragraphs": [
+      "Soy Borja,<strong>Desarrollador Frontend y Especialista en Comunicación.</strong> Soy de España pero llevo más de 6 años viviendo en el Reino Unido. Mi misión es ayudar a las personas a superar la barrera del idioma y a las empresas a expandirse a nuevos mercados creando sitios web <strong>modernos, multilingües y accesibles.</strong>",
+      "Con un grado en Traducción e Interpretación y más de dos años de formación autodidacta en ingeniería de software, combino habilidades técnicas con comprensión cultural para ofrecer soluciones digitales que realmente conectan."
+    ],
+    "cta": "¡Envíame un email ahora!"
+  },
+  "testimonials": {
+    "title": "Lo que dicen los clientes 🤷‍♂️",
+    "items": [
+      {
+        "quote": "“El nivel de calidad de las traducciones siempre ha sido estupendo, adaptándose tanto al inglés americano como al británico y a las convenciones de cada revista, muchas de ellas indexadas en JCR y muy exigentes con la calidad del idioma.”",
+        "author": "— Daniel Rodríguez Rodríguez",
+        "role": "Profesor en la Universidad Europea de Canarias"
+      },
+      {
+        "quote": "“He contado con el expertise de Borja en asuntos de traducción para varios proyectos de marketing que he realizado. Es necesario contar con una traducción experta para que los copys y mensajes de las campañas de comunicación tengan sentido en cualquier idioma.”",
+        "author": "— Ian Moreno Aguado",
+        "role": "Experto en SEO y Marketing Digital"
+      },
+      {
+        "quote": "“Creó un sitio web bilingüe pulido que superó nuestras expectativas. Todo funciona a la perfección y los textos suenan profesionales en ambos idiomas.”",
+        "author": "— Daniel Kilders",
+        "role": "Fundador de Kilders GMBH"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Ponte en contacto",
+    "description": "¿Tienes un proyecto en mente? Hagámoslo realidad.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Tu correo",
+    "messagePlaceholder": "Tu mensaje",
+    "submit": "Enviar mensaje"
+  },
+  "footer": {
+    "tagline": "Desarrollador Frontend y Especialista en Comunicación",
+    "nav": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "about": "Sobre mí",
+      "testimonials": "Testimonios",
+      "contact": "Contacto"
+    },
+    "rights": "© {{year}} Hdez.dev — Todos los derechos reservados."
+  }
 }

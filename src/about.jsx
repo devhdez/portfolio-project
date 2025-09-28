@@ -1,9 +1,12 @@
 import React from "react";
+import { Trans, useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="about" id="about">
-      <h2>About Me 👨‍💻</h2>
+      <h2>{t('about.title')}</h2>
       <div className="about-container">
         <img
           src="/portfolio-project/assets/me.jpg"
@@ -11,19 +14,16 @@ const About = () => {
           className="about-image"
         />
         <div className="about-text">
-          <p>
-            I’m Borja,<strong>Frontend Developer & Communication Specialist</strong> I am from Spain but I've been living in the UK for more than 6 years. 
-            My mission is to help people break the language barrier and businesses expand into new markets by building
-            websites that are <strong>modern, multilingual, and accessible.</strong>
-          </p>
-          <p>
-            With a degree in Translation & Interpreting and over two years of
-            self-taught software engineering, I combine technical skill with
-            cultural understanding to deliver digital solutions that truly
-            connect.
-          </p>
+          {[0, 1].map((index) => (
+            <p key={index}>
+              <Trans
+                i18nKey={`about.paragraphs.${index}`}
+                components={{ strong: <strong /> }}
+              />
+            </p>
+          ))}
           <a href="/about" className="about-button">
-            Send me an email now!
+            {t('about.cta')}
           </a>
         </div>
       </div>
