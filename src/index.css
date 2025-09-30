@@ -170,7 +170,7 @@ p {
 .hero-button-primary {
   background-color: #4dc39e;
   color: #000;
-  transform: scale(1.05); /* Make it subtly larger */
+  /* transform: scale(1.05); Make it subtly larger */
 }
 
 .hero-button-primary:hover {
